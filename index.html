@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Skapa en HTML-sida med ett formulär som innehåller fält för namn, e-postadress och ett meddelande.
+Använd JavaScript för att validera att alla fält är ifyllda innan formuläret skickas.
+Om något fält inte är ifyllt, ska ett meddelande visas under det aktuella fältet som förklarar vad som behöver fyllas i. -->
+
+    <form id="form" type="submit">
+      <label>Name</label>
+      <input type="text" id="name" />
+      <span id="name-error" class="error"></span>
+      <label>Email</label>
+
+      <input type="text" id="email" />
+      <span id="email-error" class="error"></span>
+      <label>Message</label>
+
+      <input type="text" id="message" />
+      <span id="message-error" class="error"></span>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="code.js"></script>
+  </body>
+</html>
