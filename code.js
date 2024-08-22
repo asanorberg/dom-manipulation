@@ -49,19 +49,18 @@ function addItem(e) {
   let inputValue = document.querySelector("#note-input").value;
   let errorSpan = document.querySelector("#note-error");
 
-  // Check if the error span already exists, if not, create it
   if (!errorSpan) {
     errorSpan = document.createElement("span");
     errorSpan.id = "note-error";
-    errorSpan.className = "error"; // You can style this class in your CSS
+    errorSpan.className = "error";
     document.querySelector(".notes > div").insertBefore(errorSpan, listEl);
   }
 
   if (inputValue !== "") {
     listEl.appendChild(document.createElement("li")).innerHTML = inputValue;
-    errorSpan.innerHTML = ""; // Clear the error message if input is valid
+    errorSpan.innerHTML = "";
   } else {
-    errorSpan.innerHTML = "You need to write something"; // Display error message
+    errorSpan.innerHTML = "You need to write something";
   }
 }
 
