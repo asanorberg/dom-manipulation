@@ -12,21 +12,32 @@
     <!-- Skapa en HTML-sida med ett formulär som innehåller fält för namn, e-postadress och ett meddelande.
 Använd JavaScript för att validera att alla fält är ifyllda innan formuläret skickas.
 Om något fält inte är ifyllt, ska ett meddelande visas under det aktuella fältet som förklarar vad som behöver fyllas i. -->
-
+    <h4>Övning: form</h4>
     <form id="form" type="submit">
       <label>Name</label>
       <input type="text" id="name" />
       <span id="name-error" class="error"></span>
-      <label>Email</label>
 
+      <label>Email</label>
       <input type="text" id="email" />
       <span id="email-error" class="error"></span>
-      <label>Message</label>
 
+      <label>Message</label>
       <input type="text" id="message" />
       <span id="message-error" class="error"></span>
+
       <button type="submit">Submit</button>
     </form>
+
+    <h4>Övning: anteckningar</h4>
+    <div class="notes">
+      <div>
+        <input type="text" id="note-input" placeholder="new note" />
+        <button id="add-btn">Add</button>
+        <ul></ul>
+      </div>
+    </div>
+
     <script src="code.js"></script>
   </body>
 </html>

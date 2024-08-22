@@ -4,6 +4,12 @@
   width: 200px;
 }
 
+.notes {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
 .error {
   color: red;
 }
